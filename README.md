@@ -46,12 +46,14 @@ There are a ton of free resources you can leverage to learn Python. Here are som
 ### Tutorials
 
 *	The official Python Tutorial (2.7) - https://docs.python.org/2.7/tutorial/
-*	Crash into Python - https://stephensugden.com/crash_into_python/
-*	The Hitchhiker’s guide to Python - http://docs.python-guide.org/en/latest/intro/learning/
+*	The official Python Tutorial (3.5) - https://docs.python.org/3/tutorial/
+*	Hands-on Python 3.1 Tutorial - http://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/index.html
+*	Google's Python Class - https://developers.google.com/edu/python/
 
 ### Docs
 
 *	The official Python Docs (2.7) - https://docs.python.org/2.7/library/
+*	The official Python Docs (3.5) - https://docs.python.org/3.5/library/
 
 ### Books
 
@@ -60,9 +62,11 @@ There are a ton of free resources you can leverage to learn Python. Here are som
 
 ### Guides
 
+*	The Hitchhiker’s guide to Python - http://docs.python-guide.org/en/latest/intro/learning/
 *	Awesome Python - http://awesome-python.com/
 *	Python Module of the Week (2.x) - https://pymotw.com/2/
 *	Code Like a Pythonista - http://bit.ly/K0gsMk
+*	Crash into Python - https://stephensugden.com/crash_into_python/
 
 ## Contributing
 
