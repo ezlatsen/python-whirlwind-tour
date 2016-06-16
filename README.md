@@ -26,6 +26,7 @@ This tour will not prepare you to build large or complex Python applications. It
 * __Functional programming features__ - Language features that support functional program design. Includes closures, decorators, lambdas and generators.
 * __Object Oriented features__ - Language features that support OO program design. Includes classes, inheritance, abstract base classes and mixins. 
   * __Protocols__ - An introduction to a few of the "magic-methods" that you can implement to allow the Python runtime and standard library to treat your objects like the built-in types.
+  * __Context Managers__ - Context managers are a way of "magically" allocating and releasing some sort of resource exactly where you need it.
 
 ## Prerequisites
 
