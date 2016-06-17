@@ -15,7 +15,7 @@ Each line in the log file is equal to one visit, or hit. The log is a tab-delimi
 5. URL accessed by the user.
 6. The ‘User Agent’ string containing browser and other system information from the user.
 
-Downoad the zipped log file here: [example.log](../blob/master/resources/example.log.zip)
+Downoad the zipped log file here: [example.log](../resources/example.log.zip)
 
 ## Requirments
 
