@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.8.1: http://docutils.sourceforge.net/" />
+<meta name="version" content="S5 1.1" />
+<title>Protocols</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7056 2011-06-17 10:50:48Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<script src="assets/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="assets/slides.css"
+      type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="assets/outline.css"
+      type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="assets/print.css"
+      type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="assets/opera.css"
+      type="text/css" media="projection" id="operaFix" />
+
+<style type="text/css">
+#currentSlide {display: none;}
+</style>
+</head>
+<body>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header">
+
+</div>
+<div id="footer">
+<h1>Protocols</h1>
+
+</div>
+</div>
+<div class="presentation">
+<div class="slide" id="slide0">
+<h1 class="title">Protocols</h1>
+
+<p class="center">or: The Magicians Secrets Revealed</p>
+
+</div>
+<div class="slide" id="what-is-a-protocol">
+<h1>What is a &quot;protocol&quot;?</h1>
+<p>Protocols are similar to interfaces, in that they define a collection of methods an object must support to implement that protocol, but different in that they have language-level recognition and syntactic support. A great example is the iteration protocol...</p>
+</div>
+<div class="slide" id="iteration">
+<h1>Iteration</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">for</span> item <span style="color: #007020; font-weight: bold">in</span> some_collection:
+    <span style="color: #007020; font-weight: bold">print</span> item
+</pre></div>
+<p>How does the above code work for all collection types?</p>
+<p>The secret is the iteration protocol. As long as <tt class="docutils literal">some_collection</tt> implements a couple of methods it can be used as an iterator.</p>
+<p><a class="reference external" href="http://docs.python.org/library/stdtypes.html#iterator-types">http://docs.python.org/library/stdtypes.html#iterator-types</a></p>
+</div>
+<div class="slide" id="iteration-example">
+<h1>Iteration - Example</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">reverse_iter</span>(seq):
+    position <span style="color: #666666">=</span> <span style="color: #007020">len</span>(seq) <span style="color: #666666">-</span> <span style="color: #40a070">1</span>
+    <span style="color: #007020; font-weight: bold">while</span> <span style="color: #007020">True</span>:
+        <span style="color: #007020; font-weight: bold">if</span> position <span style="color: #666666">&lt;</span> <span style="color: #40a070">0</span>:
+            <span style="color: #007020; font-weight: bold">raise</span> <span style="color: #007020">StopIteration</span>
+        <span style="color: #007020; font-weight: bold">yield</span> seq[position]
+        position <span style="color: #666666">-=</span> <span style="color: #40a070">1</span>
+
+<span style="color: #007020; font-weight: bold">class</span> <span style="color: #0e84b5; font-weight: bold">BackwardsSequence</span>(<span style="color: #007020">list</span>):
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">__iter__</span>(<span style="color: #007020">self</span>):
+        <span style="color: #007020; font-weight: bold">return</span> reverse_iter(<span style="color: #007020">self</span>)
+</pre></div>
+</div>
+<div class="slide" id="other-protocols">
+<h1>Other Protocols</h1>
+<p>Here are a few of the many protocols Python supports for customizing your objects interaction with the language:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://docs.python.org/reference/datamodel.html#object.__lt__">Comparison</a> (<tt class="docutils literal">__eq__</tt>, <tt class="docutils literal">__gt__</tt>, <tt class="docutils literal">__lt__</tt>)</li>
+<li><a class="reference external" href="http://docs.python.org/reference/datamodel.html#emulating-callable-objects">Containers</a> (<tt class="docutils literal">__contains__</tt>, <tt class="docutils literal">__setitem__</tt>, <tt class="docutils literal">__getitem__</tt>)</li>
+<li><a class="reference external" href="http://docs.python.org/library/stdtypes.html#iterator-types">Iterators</a> (<tt class="docutils literal">__iter__</tt>, <tt class="docutils literal">next</tt>)</li>
+<li><a class="reference external" href="http://docs.python.org/reference/datamodel.html#with-statement-context-managers">Context Managers</a> (<tt class="docutils literal">__enter__</tt>, <tt class="docutils literal">__exit__</tt>)</li>
+<li><a class="reference external" href="http://docs.python.org/reference/datamodel.html#object.__repr__">Stringification</a> (<tt class="docutils literal">__str__</tt>, <tt class="docutils literal">__unicode__</tt>, <tt class="docutils literal">__repr__</tt>)</li>
+<li><a class="reference external" href="http://docs.python.org/reference/datamodel.html#implementing-descriptors">Descriptors</a> (<tt class="docutils literal">__get__</tt>, <tt class="docutils literal">__set__</tt>)</li>
+<li><a class="reference external" href="http://docs.python.org/reference/datamodel.html#basic-customization">Instance Creation</a> (<tt class="docutils literal">__new__</tt>, <tt class="docutils literal">__metaclass__</tt> attribute)</li>
+</ul>
+</div>
+<div class="slide" id="container-protocol">
+<h1>Container Protocol</h1>
+<p>By implementing the appropriate methods, it's simple to make your class act like one of the built in container types.</p>
+<p>The following example creates a set of &quot;proxy&quot; classes that wrap a Cassandra library to support indexed lookup:</p>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%">keyspace[<span style="color: #4070a0">&#39;column_family&#39;</span>][<span style="color: #4070a0">&#39;rowkey&#39;</span>][<span style="color: #4070a0">&#39;column_name&#39;</span>]
+</pre></div>
+</div>
+<div class="slide" id="container-example-1-3">
+<h1>Container - Example (1/3)</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">pycassa</span> <span style="color: #007020; font-weight: bold">import</span> <span style="color: #666666">*</span>
+
+<span style="color: #007020; font-weight: bold">class</span> <span style="color: #0e84b5; font-weight: bold">KeyspaceProxy</span>(<span style="color: #007020">object</span>):
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">__init__</span>(<span style="color: #007020">self</span>, keyspace, connection_pool):
+        <span style="color: #007020">self</span><span style="color: #666666">.</span>_keyspace <span style="color: #666666">=</span> keyspace
+        <span style="color: #007020">self</span><span style="color: #666666">.</span>_pool <span style="color: #666666">=</span> connection_pool
+
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">__getitem__</span>(<span style="color: #007020">self</span>, cf):
+        <span style="color: #007020; font-weight: bold">return</span> ColumnFamilyProxy(<span style="color: #007020">self</span><span style="color: #666666">.</span>_pool, cf)
+</pre></div>
+</div>
+<div class="slide" id="container-example-2-3">
+<h1>Container - Example (2/3)</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">class</span> <span style="color: #0e84b5; font-weight: bold">ColumnFamilyProxy</span>(<span style="color: #007020">object</span>):
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">__init__</span>(<span style="color: #007020">self</span>, pool, cf_name):
+        <span style="color: #007020">self</span><span style="color: #666666">.</span>_cf <span style="color: #666666">=</span> ColumnFamily(pool, cf_name)
+
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">__getitem__</span>(<span style="color: #007020">self</span>, rowkey):
+        <span style="color: #007020; font-weight: bold">return</span> RowProxy(<span style="color: #007020">self</span><span style="color: #666666">.</span>_cf, rowkey)
+</pre></div>
+</div>
+<div class="slide" id="container-example-3-3">
+<h1>Container - Example (3/3)</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">class</span> <span style="color: #0e84b5; font-weight: bold">RowProxy</span>(<span style="color: #007020">object</span>):
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">__init__</span>(<span style="color: #007020">self</span>, column_family, rowkey):
+        <span style="color: #007020">self</span><span style="color: #666666">.</span>_cf <span style="color: #666666">=</span> column_family
+        <span style="color: #007020">self</span><span style="color: #666666">.</span>_rowkey <span style="color: #666666">=</span> rowkey
+
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">__getitem__</span>(<span style="color: #007020">self</span>, column_name):
+        row <span style="color: #666666">=</span> <span style="color: #007020">self</span><span style="color: #666666">.</span>_cf<span style="color: #666666">.</span>get(<span style="color: #007020">self</span><span style="color: #666666">.</span>_rowkey, [column_name])
+        <span style="color: #007020; font-weight: bold">return</span> row[column_name]
+
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">__setitem__</span>(<span style="color: #007020">self</span>, column_name, value):
+        <span style="color: #007020">self</span><span style="color: #666666">.</span>_cf<span style="color: #666666">.</span>insert(<span style="color: #007020">self</span><span style="color: #666666">.</span>_rowkey,
+                        {column_name: value})
+</pre></div>
+</div>
+<div class="slide" id="attribute-access">
+<h1>Attribute Access</h1>
+<p>Another commonly used special method is <tt class="docutils literal">__getattr__</tt>. It is called when <tt class="docutils literal">your_obj.attr_name</tt> is accessed and does <em>not</em> exist, (i.e. right before an AttributeError is raised).</p>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">class</span> <span style="color: #0e84b5; font-weight: bold">Mock</span>(<span style="color: #007020">object</span>):
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">__getattr__</span>(<span style="color: #007020">self</span>, attr_name):
+        <span style="color: #007020">setattr</span>(<span style="color: #007020">self</span>, attr_name) <span style="color: #666666">=</span> Mock()
+        <span style="color: #007020; font-weight: bold">return</span> <span style="color: #007020">self</span><span style="color: #666666">.</span>attr_name
+</pre></div>
+<p>This is a simplification of an actual mocking library I use called <a class="reference external" href="http://www.voidspace.org.uk/python/mock/">mock</a>.</p>
+</div>
+<div class="slide" id="descriptors">
+<h1>Descriptors</h1>
+<p>Descriptors are the mechanism by which method and attribute binding happens in Python. When you perform an attribute access on an object (e.g. <tt class="docutils literal">object.attribute</tt>) Python gives <tt class="docutils literal">attribute</tt> an opportunity to customize it's behaviour at access time, <strong>if</strong> it implements the descriptor protocol.</p>
+<p>The <tt class="docutils literal">object.attribute</tt> call gets transformed into something like <tt class="docutils literal">attribute.__get__(object)</tt> and the return value of <tt class="docutils literal">__get__</tt> is what appears to be <tt class="docutils literal">object.attribute</tt> to the calling code.</p>
+</div>
+<div class="slide" id="descriptor-example">
+<h1>Descriptor - Example</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #60a0b0; font-style: italic"># Attach a new function to an existing object</span>
+
+<span style="color: #007020; font-weight: bold">class</span> <span style="color: #0e84b5; font-weight: bold">Person</span>(<span style="color: #007020">object</span>):
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">__init__</span>(<span style="color: #007020">self</span>, name, age):
+        <span style="color: #007020">self</span><span style="color: #666666">.</span>name <span style="color: #666666">=</span> name
+        <span style="color: #007020">self</span><span style="color: #666666">.</span>age <span style="color: #666666">=</span> age
+
+me <span style="color: #666666">=</span> Person(<span style="color: #4070a0">&quot;Stephen&quot;</span>, <span style="color: #40a070">27</span>)
+</pre></div>
+</div>
+<div class="slide" id="id1">
+<h1>Descriptor - Example</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">sleep</span>(<span style="color: #007020">self</span>):
+    <span style="color: #007020; font-weight: bold">if</span> <span style="color: #007020">self</span><span style="color: #666666">.</span>age <span style="color: #666666">&lt;=</span> <span style="color: #40a070">25</span>:
+        <span style="color: #007020; font-weight: bold">print</span> <span style="color: #4070a0">&quot;later&quot;</span>
+    <span style="color: #007020; font-weight: bold">else</span>:
+        <span style="color: #007020; font-weight: bold">print</span> <span style="color: #4070a0">&quot;zzz&quot;</span>
+
+<span style="color: #60a0b0; font-style: italic"># Bind the sleep method to myself</span>
+me<span style="color: #666666">.</span>sleep <span style="color: #666666">=</span> sleep<span style="color: #666666">.</span>__get__(me)
+me<span style="color: #666666">.</span>sleep() <span style="color: #60a0b0; font-style: italic"># Prints &quot;zzz&quot;</span>
+</pre></div>
+</div>
+<div class="slide" id="the-end">
+<h1>The End</h1>
+<p>Python protocols allow you to take full advantage of the complete syntax of the language in your own objects. Writing library code against simple built-in types that can be used with any type that supports the operations needed is a great example of <cite>duck-typing</cite> in Python: if it walks like a duck and talks like a duck, code that only needs a duck shouldn't care that it's a subclass of <tt class="docutils literal">DeadlyRobot</tt> with a <tt class="docutils literal">DuckMixin</tt>.</p>
+</div>
+</div>
+</body>
+</html>

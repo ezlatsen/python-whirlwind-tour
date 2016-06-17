@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.8: http://docutils.sourceforge.net/" />
+<meta name="version" content="S5 1.1" />
+<title>Syntax</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7056 2011-06-17 10:50:48Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<script src="assets/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="assets/slides.css"
+      type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="assets/outline.css"
+      type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="assets/print.css"
+      type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="assets/opera.css"
+      type="text/css" media="projection" id="operaFix" />
+
+<style type="text/css">
+#currentSlide {display: none;}
+</style>
+</head>
+<body>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header">
+
+</div>
+<div id="footer">
+<h1>Syntax</h1>
+
+</div>
+</div>
+<div class="presentation">
+<div class="slide" id="slide0">
+<h1 class="title">Syntax</h1>
+
+<p>Python code has a simple syntax and is generally easy to read and reason about, this session is intended to make sure you know how to read any code you come across.</p>
+
+</div>
+<div class="slide" id="but-first-the-bad-news">
+<h1>But first, the bad news</h1>
+<p>Three things people (I) hate(d) about Python syntax:</p>
+<ol class="arabic simple">
+<li>No pre-declaration (can make scope-related bugs hard to find).</li>
+<li>Many things are statements (don't return a value) in Python that aren't in other languages. (E.g. <tt class="docutils literal">print</tt>, <tt class="docutils literal">+=</tt>)</li>
+<li>Significant whitespace. Statements in the same block must be indented equally.</li>
+</ol>
+<p>Feel free to hate these too, but be warned it's well-trod ground.</p>
+</div>
+<div class="slide" id="example-1">
+<h1>Example 1</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%">continue_meditating <span style="color: #666666">=</span> <span style="color: #007020">True</span>
+<span style="color: #007020; font-weight: bold">while</span> continue_meditating:
+    <span style="color: #007020; font-weight: bold">if</span> <span style="color: #007020">True</span>:
+        <span style="color: #007020; font-weight: bold">continue</span>
+    <span style="color: #007020; font-weight: bold">elif</span> <span style="color: #007020">False</span>:
+        <span style="color: #007020; font-weight: bold">raise</span> <span style="color: #007020">SystemExit</span>(<span style="color: #4070a0">&quot;Gah! Paradox!&quot;</span>)
+    <span style="color: #007020; font-weight: bold">else</span>:
+        continue_meditating <span style="color: #666666">=</span> <span style="color: #007020">False</span>
+
+share_enlightenment()
+</pre></div>
+</div>
+<div class="slide" id="you-just-saw">
+<h1>You just saw:</h1>
+<ul class="simple">
+<li><tt class="docutils literal">while</tt>, <tt class="docutils literal">if</tt>, <tt class="docutils literal">elif</tt>, and <tt class="docutils literal">else</tt> do not require parenthesis around the condition they evaluate or a curly brace, but <em>do</em> require the colon at the end of the line.</li>
+<li>Indentation denotes code blocks.</li>
+<li># marks comments.</li>
+<li><tt class="docutils literal">raise</tt> raises exceptions (<tt class="docutils literal">try</tt> and <tt class="docutils literal">except</tt> are used for catching them).</li>
+<li>Objects are instantiated without a <tt class="docutils literal">new</tt> keyword.</li>
+<li>Functions are called by following their name with parens, containing arguments if necessary.</li>
+</ul>
+</div>
+<div class="slide" id="data-literals">
+<h1>Data Literals</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%">number_list <span style="color: #666666">=</span> [<span style="color: #40a070">1</span>, <span style="color: #40a070">2</span>, <span style="color: #40a070">5</span>] <span style="color: #60a0b0; font-style: italic"># &quot;Three sir!&quot;</span>
+number_list<span style="color: #666666">.</span>append(<span style="color: #40a070">3</span>)
+
+<span style="color: #60a0b0; font-style: italic"># Dictionaries map from keys to values</span>
+music <span style="color: #666666">=</span> {<span style="color: #4070a0">&quot;Aidan&quot;</span>: <span style="color: #4070a0">&quot;Beats&quot;</span>, <span style="color: #4070a0">&quot;Justin&quot;</span>: <span style="color: #4070a0">&quot;Grunge&quot;</span>}
+music[<span style="color: #4070a0">&#39;Stephen&#39;</span>] <span style="color: #666666">=</span> <span style="color: #4070a0">&#39;Sarcasm&#39;</span>
+
+birth_year <span style="color: #666666">=</span> (<span style="color: #4070a0">&#39;Stephen&#39;</span>, <span style="color: #40a070">1984</span>) <span style="color: #60a0b0; font-style: italic"># Tuples are immutable</span>
+birth_year[<span style="color: #40a070">1</span>] <span style="color: #666666">=</span> <span style="color: #40a070">1341</span> <span style="color: #60a0b0; font-style: italic"># Raises an exception</span>
+</pre></div>
+<p><a class="reference external" href="http://docs.python.org/library/stdtypes.html">http://docs.python.org/library/stdtypes.html</a></p>
+</div>
+<div class="slide" id="functions">
+<h1>Functions</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">shout</span>(message<span style="color: #666666">=</span><span style="color: #4070a0">&quot;Hi&quot;</span>):
+    <span style="color: #007020; font-weight: bold">print</span> <span style="color: #4070a0">&quot;</span><span style="color: #70a0d0; font-style: italic">%s</span><span style="color: #4070a0">!&quot;</span> <span style="color: #666666">%</span> message
+
+shout() <span style="color: #60a0b0; font-style: italic"># Prints &quot;Hi!&quot;</span>
+shout(<span style="color: #4070a0">&quot;I love python&quot;</span>)
+shout(message<span style="color: #666666">=</span><span style="color: #4070a0">&quot;And keyword arguments&quot;</span>)
+</pre></div>
+<p>Functions are defined with the <tt class="docutils literal">def</tt> keyword, and arguments can specify default values. Additionally, arguments that specify defaults can be named at the call site. This is referred to as a <em>keyword</em> argument.</p>
+</div>
+<div class="slide" id="classes">
+<h1>Classes</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">class</span> <span style="color: #0e84b5; font-weight: bold">LoudTalker</span>(<span style="color: #007020">object</span>):
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">say</span>(<span style="color: #007020">self</span>, message):
+        shout(message)
+
+shaun <span style="color: #666666">=</span> LoudTalker()
+shaun<span style="color: #666666">.</span>say(<span style="color: #4070a0">&quot;Herpa derpa&quot;</span>)
+</pre></div>
+<p>Classes are declared using the <tt class="docutils literal">class</tt> keyword, and methods are declared as functions inside the class body (indicated by indentation). Instances are created by calling the class object, there is no <tt class="docutils literal">new</tt> keyword.</p>
+</div>
+<div class="slide" id="iteration">
+<h1>Iteration</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%">beverage <span style="color: #666666">=</span> <span style="color: #007020">None</span>
+<span style="color: #007020; font-weight: bold">for</span> fridge <span style="color: #007020; font-weight: bold">in</span> office:
+    <span style="color: #007020; font-weight: bold">if</span> <span style="color: #4070a0">&#39;Coke&#39;</span> <span style="color: #007020; font-weight: bold">in</span> fridge:
+        beverage <span style="color: #666666">=</span> fridge<span style="color: #666666">.</span>remove(<span style="color: #4070a0">&#39;Coke&#39;</span>)
+        <span style="color: #007020; font-weight: bold">break</span>
+<span style="color: #007020; font-weight: bold">if</span> <span style="color: #007020; font-weight: bold">not</span> beverage:
+    shout(<span style="color: #4070a0">&quot;Where&#39;s the @#$</span><span style="color: #70a0d0; font-style: italic">%i</span><span style="color: #4070a0">ng Coke?&quot;</span>)
+</pre></div>
+<p>All containers can be iterated over with <tt class="docutils literal">for ... in ...</tt>. The <tt class="docutils literal">in</tt> keyword can also be used for existence checks with <tt class="docutils literal">if</tt>.</p>
+</div>
+<div class="slide" id="iteration-dictionaries">
+<h1>Iteration - Dictionaries</h1>
+<p>If <em>all</em> containers can be iterated over, what happens when you iterate over a dictionary?</p>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">for</span> key <span style="color: #007020; font-weight: bold">in</span> mapping:
+  <span style="color: #007020; font-weight: bold">print</span> <span style="color: #4070a0">&quot;</span><span style="color: #70a0d0; font-style: italic">%s</span><span style="color: #4070a0">=</span><span style="color: #70a0d0; font-style: italic">%s</span><span style="color: #4070a0">&quot;</span> <span style="color: #666666">%</span> (key, mapping[key])
+
+<span style="color: #007020; font-weight: bold">for</span> value <span style="color: #007020; font-weight: bold">in</span> mapping<span style="color: #666666">.</span>values():
+  <span style="color: #007020; font-weight: bold">print</span> <span style="color: #4070a0">&quot;???=</span><span style="color: #70a0d0; font-style: italic">%s</span><span style="color: #4070a0">&quot;</span> <span style="color: #666666">%</span> value
+
+<span style="color: #007020; font-weight: bold">for</span> (k, v) <span style="color: #007020; font-weight: bold">in</span> mapping<span style="color: #666666">.</span>items():
+  <span style="color: #007020; font-weight: bold">print</span> <span style="color: #4070a0">&quot;</span><span style="color: #70a0d0; font-style: italic">%s</span><span style="color: #4070a0">=</span><span style="color: #70a0d0; font-style: italic">%s</span><span style="color: #4070a0">&quot;</span> <span style="color: #666666">%</span> (k, v)
+</pre></div>
+</div>
+<div class="slide" id="splats">
+<h1>Splats</h1>
+<p>Functions can declare that they accept a variable number of arguments or arbitrary keyword arguments or both. This is done by prefixing the final argument name with * or ** or having two argument names (with * and ** , respectively):</p>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">takes_all</span>(required, <span style="color: #666666">*</span>args, <span style="color: #666666">**</span>kwargs):
+    <span style="color: #60a0b0; font-style: italic"># tuple of all positional (non-keyword) arguments</span>
+    <span style="color: #007020; font-weight: bold">print</span> args
+
+    <span style="color: #60a0b0; font-style: italic"># dictionary of all keyword arguments</span>
+    <span style="color: #007020; font-weight: bold">print</span> kwargs
+</pre></div>
+</div>
+<div class="slide" id="the-end">
+<h1>The End</h1>
+<p>There are some very important keywords that got left out here, but at this point you know enough to write some code and start filling in the gaps.</p>
+<p class="center">Questions?</p>
+</div>
+</div>
+</body>
+</html>

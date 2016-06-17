@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.8: http://docutils.sourceforge.net/" />
+<meta name="version" content="S5 1.1" />
+<title>Functional Programming</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7056 2011-06-17 10:50:48Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<script src="assets/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="assets/slides.css"
+      type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="assets/outline.css"
+      type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="assets/print.css"
+      type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="assets/opera.css"
+      type="text/css" media="projection" id="operaFix" />
+
+<style type="text/css">
+#currentSlide {display: none;}
+</style>
+</head>
+<body>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header">
+
+</div>
+<div id="footer">
+<h1>Functional Programming</h1>
+
+</div>
+</div>
+<div class="presentation">
+<div class="slide" id="slide0">
+<h1 class="title">Functional Programming</h1>
+
+<p>While it may seem odd (or just annoying) to talk about the functional features before the object oriented ones, I think they are simpler to show before rather than after.</p>
+
+</div>
+<div class="slide" id="functions-are-first-class">
+<h1>Functions are first-class</h1>
+<p>Functions in Python can be referred to by name. They are run only when you <em>call</em> them with parenthesis:</p>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">add</span>(x,y): <span style="color: #007020; font-weight: bold">return</span> x <span style="color: #666666">+</span> y
+
+<span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">subtract</span>(x,y): <span style="color: #007020; font-weight: bold">return</span> x <span style="color: #666666">-</span> y
+
+<span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">do_binary_op</span>(op, x, y):
+    <span style="color: #007020; font-weight: bold">return</span> op(x, y)
+
+z <span style="color: #666666">=</span> do_binary_op(add, <span style="color: #40a070">5</span>, <span style="color: #40a070">10</span>) <span style="color: #60a0b0; font-style: italic"># z = 15</span>
+</pre></div>
+</div>
+<div class="slide" id="closures">
+<h1>Closures</h1>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">make_rotater</span>(seq):
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">rotate</span>():
+        val <span style="color: #666666">=</span> seq<span style="color: #666666">.</span>pop(<span style="color: #40a070">0</span>)
+        seq<span style="color: #666666">.</span>append(val)
+        <span style="color: #007020; font-weight: bold">return</span> val
+    <span style="color: #007020; font-weight: bold">return</span> rotate
+
+r <span style="color: #666666">=</span> make_rotater([<span style="color: #40a070">1</span>,<span style="color: #40a070">2</span>,<span style="color: #40a070">3</span>])
+<span style="color: #007020; font-weight: bold">assert</span> [r(), r(), r(), r(), r()] <span style="color: #666666">==</span> [<span style="color: #40a070">1</span>,<span style="color: #40a070">2</span>,<span style="color: #40a070">3</span>,<span style="color: #40a070">1</span>,<span style="color: #40a070">2</span>]
+</pre></div>
+<p>You can safely refer to objects from the scope a function was declared in, even after that scope ends.</p>
+<div class="admonition-closure-limitation-gotcha handout admonition">
+<p class="first admonition-title">Closure Limitation/Gotcha</p>
+<p class="last">An annoying implementation detail of Pythons closures is that <em>only</em> objects are properly closed over. Non-reference types (strings and numbers) only exist for the duration of the scope they were declared in.</p>
+</div>
+</div>
+<div class="slide" id="decorators">
+<h1>Decorators</h1>
+<p>Python has a special syntax that allows you to wrap or &quot;decorate&quot; functions (and classes) at compile time:</p>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">off_by_one</span>(original_function):
+    <span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">new_function</span>(x, y):
+        <span style="color: #007020; font-weight: bold">return</span> original_function(x, y) <span style="color: #666666">+</span> <span style="color: #40a070">1</span>
+    <span style="color: #007020; font-weight: bold">return</span> new_function
+
+<span style="color: #555555; font-weight: bold">@off_by_one</span>
+<span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">add</span>(x, y):
+    <span style="color: #007020; font-weight: bold">return</span> x <span style="color: #666666">+</span> y
+</pre></div>
+</div>
+<div class="slide" id="decorators-what-just-happened">
+<h1>Decorators: What just happened?</h1>
+<p>The <tt class="docutils literal">off_by_one</tt> function takes a function as it's sole argument and returns a new function.</p>
+<p>We <em>decorated</em> the <tt class="docutils literal">add</tt> function with <tt class="docutils literal">off_by_one</tt> by placing <tt class="docutils literal">&#64;off_by_one</tt> above the function definition. This is equivalent to writing the following after the definition:</p>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%">add <span style="color: #666666">=</span> off_by_one(add)
+</pre></div>
+<p><a class="reference external" href="http://docs.python.org/glossary.html#term-decorator">http://docs.python.org/glossary.html#term-decorator</a></p>
+</div>
+<div class="slide" id="lambda-anonymous-functions">
+<h1>Lambda (anonymous) functions</h1>
+<p>Short functions can be declared inline using the <tt class="docutils literal">lambda</tt> syntax:</p>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%">is_odd <span style="color: #666666">=</span> <span style="color: #007020; font-weight: bold">lambda</span> x: x <span style="color: #666666">%</span> <span style="color: #40a070">2</span>
+</pre></div>
+<p>These are useful when used with functions that take a function as a parameter, like <tt class="docutils literal">sorted</tt>:</p>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%">numbers <span style="color: #666666">=</span> [<span style="color: #40a070">55</span>, <span style="color: #40a070">22</span>, <span style="color: #40a070">53</span>, <span style="color: #40a070">16</span>, <span style="color: #40a070">67</span>, <span style="color: #40a070">363612</span>, <span style="color: #40a070">64361</span>, <span style="color: #40a070">12556</span>]
+<span style="color: #60a0b0; font-style: italic"># Sort the numbers by their least significant byte</span>
+lsB_ordered <span style="color: #666666">=</span> <span style="color: #007020">sorted</span>(numbers, key<span style="color: #666666">=</span><span style="color: #007020; font-weight: bold">lambda</span> x: x <span style="color: #666666">&amp;</span> <span style="color: #40a070">0xFF</span>)
+</pre></div>
+<p><a class="reference external" href="http://docs.python.org/library/functions.html#sorted">http://docs.python.org/library/functions.html#sorted</a></p>
+</div>
+<div class="slide" id="generator-functions">
+<h1>Generator Functions</h1>
+<p>Generator functions maintain state between calls. By using <tt class="docutils literal">yield</tt> instead of return, the function will pick up on the next line the next time you call it.</p>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span style="color: #007020; font-weight: bold">def</span> <span style="color: #06287e">get_all_records</span>(lookup, keys):
+    <span style="color: #007020; font-weight: bold">for</span> key <span style="color: #007020; font-weight: bold">in</span> keys:
+        <span style="color: #007020; font-weight: bold">yield</span> datasource<span style="color: #666666">.</span>get(key)
+
+<span style="color: #007020; font-weight: bold">for</span> record <span style="color: #007020; font-weight: bold">in</span> get_all_records(lookup, keys):
+    <span style="color: #007020; font-weight: bold">print</span> record
+</pre></div>
+<!-- handout
+
+The above code will retrieve (and keep "alive" in memory) one record at a time. Keep in mind that keys could *also* be a generator.
+
+http://docs.python.org/tutorial/classes.html#generators -->
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="waypoints.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var link = document.getElementById('thisone');
+	link.href = link.href.replace("email.me", "stephensugden.com")
+		.replace("enable_js_to", "python");
+});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.8: http://docutils.sourceforge.net/" />
+<title>Crash into Python</title>
+<link rel="stylesheet" href="index.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="crash-into-python">
+<h1 class="title">Crash into Python</h1>
+
+<p>or: Python for Programmers with 3 Hours</p>
+<div class="section" id="about">
+<h1>About</h1>
+<p><em>Crash into Python</em> is a set of documents/slides that are meant to be used as a
+teaching aid for bringing programmers from other languages up to speed with
+Python. It assumes that you have enough familiarity with programming to know
+what <tt class="docutils literal">function</tt> and <tt class="docutils literal">class</tt> mean, and will recognize that <tt class="docutils literal">print</tt>
+probably doesn't put ink on paper. More importantly, it assumes that you either
+have an instructor who is well-versed in Python, or are resourceful enough to
+find answers for yourself. A number of these slides are designed to trigger
+questions and discussion, so if it seems like you're missing something, that's
+a good sign you could be digging deeper.</p>
+<p>If you are completely new to programming and would like to start learning with
+Python, I recommend <a class="reference external" href="http://learnpythonthehardway.org">Learn Python the Hard Way</a> by Zed Shaw. Despite the
+intimidating title, it is an excellent introduction to programming intended for
+the complete novice.</p>
+</div>
+<div class="section" id="what-we-re-going-to-cover">
+<h1>What we're going to cover</h1>
+<dl class="docutils">
+<dt><a class="reference external" href="Syntax.html">Syntax</a></dt>
+<dd>The general form of Python code. (<a class="reference external" href="Syntax.s5.html">Slides</a>)</dd>
+<dt><a class="reference external" href="CodeOrganization.html">Code Organization</a></dt>
+<dd>The ways in which Python code can be accessed across files. (<a class="reference external" href="CodeOrganization.s5.html">Slides</a>)</dd>
+<dt><a class="reference external" href="FunctionalProgramming.html">Functional Programming Features</a></dt>
+<dd>Language features that support functional program design. Includes
+closures, decorators, lambdas and generators. (<a class="reference external" href="FunctionalProgramming.s5.html">Slides</a>)</dd>
+<dt><a class="reference external" href="ObjectOrientation.html">Object Oriented Features</a></dt>
+<dd>Language features that support OO program design. Includes classes,
+inheritance, abstract base classes and mixins. (<a class="reference external" href="ObjectOrientation.s5.html">Slides</a>)</dd>
+<dt><a class="reference external" href="Protocols.html">Protocols</a></dt>
+<dd>An introduction to a few of the &quot;magic-methods&quot; that you can implement to
+allow the Python runtime and standard library to treat your objects like the
+built-in types. (<a class="reference external" href="Protocols.s5.html">Slides</a>)</dd>
+</dl>
+</div>
+<div class="section" id="word-of-advice-on-tools">
+<h1>Word of advice on tools</h1>
+<p>The Python interpreter is a great tool for learning and experimentation. Just
+run <tt class="docutils literal">python</tt> from your command prompt to get started.</p>
+<ul class="simple">
+<li><tt class="docutils literal">help(object)</tt> will display the help for any object if it's available</li>
+<li><tt class="docutils literal">dir(object)</tt> will display the list of attributes an object has</li>
+<li><a class="reference external" href="http://docs.python.org">http://docs.python.org</a> and google/stack overflow are your friends.</li>
+</ul>
+<p>If you want the super-deluxe experience, install <a class="reference external" href="http://bpython-interpreter.org">bpython</a>. It's a snazzed up
+version of the interpreter that autocompletes and displays documentation inline
+as you type.</p>
+<p>Chances are, as you write more python code, you're going to want to install
+some third-party libraries. Currently, the best way to manage Python
+distributions is through <a class="reference external" href="http://pip-installer.org">pip</a>, though <tt class="docutils literal">distutils2</tt>/<tt class="docutils literal">packaging</tt> will
+likely be preferred in the future.</p>
+</div>
+<div class="section" id="contact">
+<h1>Contact</h1>
+<p>Please submit all feedback, flames and compliments to
+  <a id="thisone" href="mailto:enable_js_to@email.me">Stephen</a>.
+</p></div>
+</div>
+</body>
+</html>
