@@ -17,7 +17,7 @@ Each line in the log file is equal to one visit, or hit. The log is a tab-delimi
 
 Downoad the zipped log file here: [example.log](../resources/example.log.zip?raw=true)
 
-## Requirments
+## Requirements
 
 Download the auth.log.zip file above, and upzip it. You can unzip manually or from within your script. At a minimum, write a script that will calculate and output the following:
 
