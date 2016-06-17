@@ -19,7 +19,7 @@ Downoad the zipped log file here: [example.log](../resources/example.log.zip?raw
 
 ## Requirments
 
-At a minimum, write a script that will calculate and output the following:
+Download the auth.log.zip file above, and upzip it. You can unzip manually or from within your script. At a minimum, write a script that will calculate and output the following:
 
 1. Date range of the log. This would be the first (oldest) and last (newest) date in the file.
 2. Total number of hits. 1 hit = 1 line
