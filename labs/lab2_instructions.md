@@ -27,4 +27,39 @@ At a minimum, write a script that will calculate and output the following:
 4. Top 10 users, and the number of times each visited.
 5. Top 10 visited URLs, and the number of times each was visited.
 6. Number of visitors using any version of Internet Explorer
+  - break down by version if you like
 7. Number of people using any version of Firefox
+  - break down by version if you like
+
+## Example output
+
+```
+Access log for date’s XX/May/20xx to xx/May/20xx 
+
+Total # of hits: 999999 
+Total # of unique visitors: 999 
+
+Top 5 Users:
+   9999 user116
+   9999 user0
+   9999 user54
+   9999 user177
+   9999 user56
+
+Top 5 most vistited URL's:
+ 100000 http://www.example.com/index.html
+  60000 http://www.example.com/index.html?HomeRefreshInterval=120
+   7000 http://www.example.com/NoAuth/RichText/editor/fckeditor.html
+   5000 http://www.example.com/index.html?HomeRefreshInterval=300
+   4000 http://www.example.com/index.html?HomeRefreshInterval=600 
+
+Browser Statistics:
+ 100000 MSIE 6.0
+ 100000 MSIE 7.0
+  10000 MSIE 8.0 
+   2000 Firefox/3.6.3
+   1000 Firefox/3.5.9
+   1000 Firefox/3.6.3
+   1000 Firefox/3.0.19
+   1000 Other Browsers
+```
