@@ -1,4 +1,4 @@
-# Lab 2 - Log file analysis
+# Lab 2: Log file analysis
 
 ## Background
 
