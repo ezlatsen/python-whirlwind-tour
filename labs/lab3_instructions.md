@@ -1,4 +1,4 @@
-# Lab 3 - Calling REST Services
+# Lab 3: Calling REST Services
 
 ## Background
 
