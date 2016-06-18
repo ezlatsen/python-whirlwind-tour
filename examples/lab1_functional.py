@@ -25,7 +25,7 @@ def get_cpu_choice():
     >>> 6 > get_cpu_choice() > 0
     True
     """
-    return random.randint(1,6)
+    return random.randint(1,5)
 
 def get_winner(player, cpu):
     """
