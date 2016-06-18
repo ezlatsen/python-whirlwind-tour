@@ -6,7 +6,7 @@ while True:
     if user_guess in ['1', '2', '3', '4', '5']:
         break
 user_guess = int(user_guess)
-cpu = random.randint(1,6)
+cpu = random.randint(1,5)
 
 choices = { 
     1: 'Rock',
