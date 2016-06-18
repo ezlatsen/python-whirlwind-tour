@@ -50,6 +50,7 @@ There are a ton of free resources you can leverage to learn Python. Here are som
 *	The official Python Tutorial (3.5) - https://docs.python.org/3/tutorial/
 *	Hands-on Python 3.1 Tutorial - http://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/index.html
 *	Google's Python Class - https://developers.google.com/edu/python/
+*	Python Packaging - https://python-packaging.readthedocs.io/en/latest/index.html
 
 ### Docs
 
