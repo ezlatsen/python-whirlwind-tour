@@ -49,7 +49,7 @@ class Game(object):
                 return
 
     def play(self):
-        self._cpu = random.randint(1,6)
+        self._cpu = random.randint(1,5)
         self.__get_user_input()
         if self._player == self._cpu:
             self._winner = 'Nobody'
